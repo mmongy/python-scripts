@@ -104,6 +104,7 @@ def main(argv):
             # print(result)
             print("\nevt_type", evt_type)
             for evt in results:
+                print("EVENT: "+str(evt))
                 print(evt.id.val, str(datetime.fromtimestamp(evt.time.val/1000)), evt.type.value.val)
                 # these both seem to be None
                 # print('cevt', evt.containingEvent, evt.status)
